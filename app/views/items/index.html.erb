@@ -1,3 +1,5 @@
+<%# ここがトップ画面 %>
+
 <%= render "shared/header" %>
 <div class='main'>
 
@@ -179,8 +181,9 @@
     </ul>
   </div>
   <%# /商品一覧 %>
+  <%# ここが左下の出品を押すと出品画面に遷移する %>
 </div>
-<%= link_to('#', class: 'purchase-btn') do %>
+<%= link_to("/items/new", class: 'purchase-btn') do %>
   <span class='purchase-btn-text'>出品する</span>
   <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 <% end %>
